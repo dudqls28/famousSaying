@@ -1,24 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="famousSaying" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Famous Saying" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wfR-go-P15">
+                                <rect key="frame" x="24" y="68" width="366" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="clK-NS-2V1">
+                                <rect key="frame" x="20" y="124" width="374" height="200"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nD2-yg-zLg">
+                                        <rect key="frame" x="20" y="20" width="334" height="140"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" systemColor="systemOrangeColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uAV-09-lFg">
+                                        <rect key="frame" x="20" y="180" width="334" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" systemColor="systemOrangeColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstItem="uAV-09-lFg" firstAttribute="leading" secondItem="clK-NS-2V1" secondAttribute="leading" constant="20" id="54I-sS-6ED"/>
+                                    <constraint firstAttribute="height" constant="200" id="BiM-5t-7W9"/>
+                                    <constraint firstItem="uAV-09-lFg" firstAttribute="top" secondItem="nD2-yg-zLg" secondAttribute="bottom" constant="20" id="Ff0-2U-8yt"/>
+                                    <constraint firstItem="nD2-yg-zLg" firstAttribute="top" secondItem="clK-NS-2V1" secondAttribute="top" constant="20" id="GuW-Dd-rIG"/>
+                                    <constraint firstItem="nD2-yg-zLg" firstAttribute="leading" secondItem="clK-NS-2V1" secondAttribute="leading" constant="20" id="Kqo-yV-CrE"/>
+                                    <constraint firstAttribute="bottom" secondItem="uAV-09-lFg" secondAttribute="bottom" constant="20" id="TbX-fF-UfH"/>
+                                    <constraint firstAttribute="trailing" secondItem="nD2-yg-zLg" secondAttribute="trailing" constant="20" id="eRK-ao-0cU"/>
+                                    <constraint firstAttribute="trailing" secondItem="uAV-09-lFg" secondAttribute="trailing" constant="20" id="wbE-fO-6oh"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eIv-ta-cAY">
+                                <rect key="frame" x="123" y="348" width="168.5" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Create Famous Saying"/>
+                                <connections>
+                                    <action selector="tapQuoteCreateBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Pz-IT-3Dh"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wfR-go-P15" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="7sk-yU-b1s"/>
+                            <constraint firstItem="clK-NS-2V1" firstAttribute="top" secondItem="wfR-go-P15" secondAttribute="bottom" constant="20" id="8rM-Pj-wwS"/>
+                            <constraint firstItem="wfR-go-P15" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="90F-rD-tsE"/>
+                            <constraint firstItem="eIv-ta-cAY" firstAttribute="centerX" secondItem="clK-NS-2V1" secondAttribute="centerX" id="CLh-r2-nvl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="clK-NS-2V1" secondAttribute="trailing" constant="20" id="ETq-1A-ZXx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wfR-go-P15" secondAttribute="trailing" constant="24" id="NPr-fM-4wl"/>
+                            <constraint firstItem="eIv-ta-cAY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Xik-I5-A5l"/>
+                            <constraint firstItem="eIv-ta-cAY" firstAttribute="top" secondItem="clK-NS-2V1" secondAttribute="bottom" constant="24" id="kpE-Zy-A82"/>
+                            <constraint firstItem="clK-NS-2V1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="l6n-CZ-fFp"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="nameLabel" destination="uAV-09-lFg" id="wi5-bb-PkO"/>
+                        <outlet property="quoteLabel" destination="nD2-yg-zLg" id="Xpg-mO-5om"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="20" y="98"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

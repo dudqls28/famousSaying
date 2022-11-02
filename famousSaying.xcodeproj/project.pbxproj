@@ -16,6 +16,7 @@
 		D507F68D2912052F00CE7645 /* famousSayingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D507F68C2912052F00CE7645 /* famousSayingTests.swift */; };
 		D507F6972912052F00CE7645 /* famousSayingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D507F6962912052F00CE7645 /* famousSayingUITests.swift */; };
 		D507F6992912053000CE7645 /* famousSayingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D507F6982912053000CE7645 /* famousSayingUITestsLaunchTests.swift */; };
+		D507F6A629120FF300CE7645 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = D507F6A529120FF300CE7645 /* Quote.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		D507F6922912052F00CE7645 /* famousSayingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = famousSayingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D507F6962912052F00CE7645 /* famousSayingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = famousSayingUITests.swift; sourceTree = "<group>"; };
 		D507F6982912053000CE7645 /* famousSayingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = famousSayingUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D507F6A529120FF300CE7645 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				D507F67E2912052F00CE7645 /* Assets.xcassets */,
 				D507F6802912052F00CE7645 /* LaunchScreen.storyboard */,
 				D507F6832912052F00CE7645 /* Info.plist */,
+				D507F6A529120FF300CE7645 /* Quote.swift */,
 			);
 			path = famousSaying;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D507F6A629120FF300CE7645 /* Quote.swift in Sources */,
 				D507F67A2912052E00CE7645 /* ViewController.swift in Sources */,
 				D507F6762912052E00CE7645 /* AppDelegate.swift in Sources */,
 				D507F6782912052E00CE7645 /* SceneDelegate.swift in Sources */,
